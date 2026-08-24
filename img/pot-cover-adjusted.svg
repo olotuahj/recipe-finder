@@ -1,0 +1,16 @@
+<!-- Save as pot-cover-adjusted.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="potTitle">
+  <title id="potTitle">Pot with larger lid</title>
+
+  <!-- pot base (made smaller) -->
+  <path fill="currentColor" d="M16 32c0 5 4 8 8 8h16c4 0 8-3 8-8v-2H16v2z"/>
+
+  <!-- handles (adjusted to match smaller pot) -->
+  <path fill="currentColor" d="M12 32c1 0 2-1 2-2s-1-2-2-2v4zM52 32c-1 0-2-1-2-2s1-2 2-2v4z"/>
+
+  <!-- lid (made bigger and slightly lower) -->
+  <path fill="currentColor" d="M10 24c5-7 22-10 22-10s17 3 22 10H10z"/>
+
+  <!-- lid knob (white circle) -->
+  <circle cx="32" cy="19" r="2.5" fill="#ffffff" />
+</svg>

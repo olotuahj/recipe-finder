@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48" role="img" aria-labelledby="title">
+  <title id="title">User silhouette avatar</title>
+  <circle cx="32" cy="18" r="8" fill="#333"/>
+  <path d="M8 52c0-10 10-18 24-18s24 8 24 18H8z" fill="#333"/>
+</svg>

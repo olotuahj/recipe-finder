@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Recipe Finder</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+
+    <div class="header">
+
+        <!-- ================= HEADER ================= -->
+
+        <span class="top">
+
+            <div class="logo-name">
+
+                <img
+                    src="img/ei_1755305813462-removebg-preview.png"
+                    alt="Healthy Recipe Finder logo"
+                    id="logo"
+                    width="40"
+                    height="40"
+                >
+
+                <h3>Healthy Recipe Finder</h3>
+
+            </div>
+
+
+            <div class="top-bar">
+
+                <span id="Home">
+                    <a href="index.html">Home</a>
+                </span>
+
+                <span id="About">
+                    <a href="about.html">About</a>
+                </span>
+
+                <span id="Recipes">
+                    <a href="recipes.html">Recipes</a>
+                </span>
+
+            </div>
+
+
+           <a href="about.html" id="browse-recipes">About recipes </a>
+
+        </span>
+
+
+        <br>
+
+        <hr>
+
+
+        <!-- ================= PAGE HEADING ================= -->
+
+        <div class="heading">
+
+            <h1>Explore our simple, healthy recipes</h1>
+
+            <p>
+                Discover eight quick, whole-food dishes that fit real-life schedules and taste
+                amazing.
+                <br>
+                Use the search bar to find a recipe by name or ingredient, or simply scroll
+                <br>
+                the list and let something delicious catch your eye.
+            </p>
+
+        </div>
+
+
+        <!-- ================= FILTERS ================= -->
+
+        <div class="time">
+
+            <form action="" class="Max-Prep-cooking-time">
+
+                <div class="filters-left">
+
+                    <select name="Prep time" id="max-prep-time">
+
+                        <option value="">Max Prep Time</option>
+                        <option value="5">5 mins</option>
+                        <option value="10">10 mins</option>
+                        <option value="15">15 mins</option>
+                        <option value="20">20 mins</option>
+                        <option value="30">30 mins</option>
+
+                    </select>
+
+
+                    <select name="Cooking time" id="max-cook-time">
+
+                        <option value="">Max Cook Time</option>
+                        <option value="0">0 min</option>
+                        <option value="5">5 mins</option>
+                        <option value="10">10 mins</option>
+                        <option value="12">12 mins</option>
+                        <option value="15">15 mins</option>
+                        <option value="20">20 mins</option>
+                        <option value="30">30 mins</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="search-box">
+
+                    <input
+                        type="text"
+                        id="search"
+                        placeholder="🔍 Search by name or ingredient..."
+                        size="25"
+                        maxlength="100"
+                    >
+
+                </div>
+
+            </form>
+
+        </div>
+
+
+        <!-- =================================================
+             ALL 8 RECIPE CARDS
+             ONE CONTAINER FOR RESPONSIVE LAYOUT
+        ================================================== -->
+
+        <div class="recipe-container">
+
+
+            <!-- ================= RECIPE 1 ================= -->
+
+            <div
+                class="box-1 recipe-box"
+                data-prep="10"
+                data-cook="0"
+            >
+
+                <div class="items-1">
+
+                    <figure class="fig1">
+
+                        <img
+                            id="image1"
+                            src="img/anna-pelzer-IGfIGP5ONV0-unsplash.jpg"
+                            alt="Mediterranean Chicken Salad"
+                            style="width: 350px; height: 250px;"
+                        >
+
+                        <figcaption id="figcaption">
+                            Mediterranean Chicken Salad
+                        </figcaption>
+
+                        <p>
+                            A refreshing, protein-packed salad tossed in a
+                            lemon-olive oil dressing.
+                        </p>
+
+                    </figure>
+
+                </div>
+
+
+                <div class="icons">
+
+                    <div class="icon1-2">
+
+                        <div class="icon1">
+
+                            <img
+                                src="img/profile-user-silhouette.svg"
+                                id="servings-icon"
+                                alt="servings-icon"
+                                width="20"
+                                height="20"
+                            >
+
+                            <div>
+                                <span id="Servings-2">Servings: 2</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="icon2">
+
+                            <img
+                                src="img/alarm-clock-solid-green.svg"
+                                id="prep-time-icon"
+                                alt="prep-time-icon"
+                                width="27"
+                                height="27"
+                            >
+
+                            <div class="Preptime">
+                                <span>Prep: 10 mins</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="icon3">
+
+                        <img
+                            src="img/pot-cover-adjusted.svg"
+                            id="cook-time-icon"
+                            alt="cook-time-icon"
+                            width="20"
+                            height="20"
+                        >
+
+                        <div>
+                            <span>Cook: 0 min</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button onclick="window.location.href='about.html?recipe=mediterranean-chicken-salad'">
+    View Recipes
+</button>
+
+            </div>
+
+
+            <!-- ================= RECIPE 2 ================= -->
+
+            <div
+                class="box-2 recipe-box"
+                data-prep="5"
+                data-cook="5"
+            >
+
+                <div class="avocado-content">
+
+                    <figure class="fig2">
+
+                        <img
+                            id="image2"
+                            src="img/eiliv-aceron-ZuIDLSz3XLg-unsplash.jpg"
+                            alt="Avocado and Tomato Wholegrain Toast"
+                            style="width: 350px; height: 250px;"
+                        >
+
+                        <figcaption id="figcaption2">
+                            Avocado &amp; Tomato Wholegrain Toast
+                        </figcaption>
+
+                        <p>
+                            Creamy avocado spread over toasted wholegrain bread,
+                            topped with juicy tomatoes.
+                        </p>
+
+                    </figure>
+
+                </div>
+
+
+                <div class="icons">
+
+                    <div class="icon1-2">
+
+                        <div class="icon1">
+
+                            <img
+                                src="img/profile-user-silhouette.svg"
+                                id="servings-icon"
+                                alt="servings-icon"
+                                width="20"
+                                height="20"
+                            >
+
+                            <div>
+                                <span id="Servings-2">Servings: 2</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="icon2">
+
+                            <img
+                                src="img/alarm-clock-solid-green.svg"
+                                id="prep-time-icon"
+                                alt="prep-time-icon"
+                                width="27"
+                                height="27"
+                            >
+
+                            <div class="Preptime">
+                                <span>Prep: 5 mins</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="icon3">
+
+                        <img
+                            src="img/pot-cover-adjusted.svg"
+                            id="cook-time-icon"
+                            alt="cook-time-icon"
+                            width="20"
+                            height="20"
+                        >
+
+                        <div>
+                            <span>Cook: 5 mins</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button onclick="window.location.href='about.html?recipe=avocado-tomato-toast'">
+    View Recipes
+</button>
+
+            </div>
+
+
+            <!-- ================= RECIPE 3 ================= -->
+
+            <div
+                class="box-3 recipe-box"
+                data-prep="5"
+                data-cook="12"
+            >
+
+                <div class="Lemon-garlic">
+
+                    <figure class="fig3">
+
+                        <img
+                            id="image3"
+                            src="img/victoria-shes-UC0HZdUitWY-unsplash.jpg"
+                            alt="One-Pan Lemon Garlic Salmon"
+                            style="width: 350px; height: 250px;"
+                        >
+
+                        <figcaption id="figcaption3">
+                            One-Pan Lemon Garlic Salmon with...
+                        </figcaption>
+
+                        <p>
+                            A 15-minute weeknight dinner of flasky salmon
+                            and tender asparagus.
+                        </p>
+
+                    </figure>
+
+                </div>
+
+
+                <div class="icons">
+
+                    <div class="icon1-2">
+
+                        <div class="icon1">
+
+                            <img
+                                src="img/profile-user-silhouette.svg"
+                                id="servings-icon"
+                                alt="servings-icon"
+                                width="20"
+                                height="20"
+                            >
+
+                            <div>
+                                <span id="Servings-2">Servings: 2</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="icon2">
+
+                            <img
+                                src="img/alarm-clock-solid-green.svg"
+                                id="prep-time-icon"
+                                alt="prep-time-icon"
+                                width="27"
+                                height="27"
+                            >
+
+                            <div class="Preptime">
+                                <span>Prep: 5 mins</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="icon3">
+
+                        <img
+                            src="img/pot-cover-adjusted.svg"
+                            id="cook-time-icon"
+                            alt="cook-time-icon"
+                            width="20"
+                            height="20"
+                        >
+
+                        <div>
+                            <span>Cook: 12 mins</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+         <button onclick="window.location.href='about.html?recipe=one-pan-lemon-garlic-salmon'">
+    View Recipes
+</button>
+
+            </div>
+
+
+            <!-- ================= RECIPE 4 ================= -->
+
+            <div
+                class="box-4 recipe-box"
+                data-prep="10"
+                data-cook="15"
+            >
+
+                <div class="Quinoa-Veggie">
+
+                    <figure class="fig4">
+
+                        <img
+                            id="image4"
+                            src="img/chad-montano-MqT0asuoIcU-unsplash.jpg"
+                            alt="Quinoa Veggie Power Bowl"
+                            style="width: 350px; height: 250px;"
+                        >
+
+                        <figcaption id="figcaption4">
+                            Quinoa Veggie Power Bowl
+                        </figcaption>
+
+                        <p>
+                            A balanced bowl of fluffy quinoa, roasted veggies
+                            and healthy fats.
+                        </p>
+
+                    </figure>
+
+                </div>
+
+
+                <div class="icons">
+
+                    <div class="icon1-2">
+
+                        <div class="icon1">
+
+                            <img
+                                src="img/profile-user-silhouette.svg"
+                                id="servings-icon"
+                                alt="servings-icon"
+                                width="20"
+                                height="20"
+                            >
+
+                            <div>
+                                <span id="Servings-2">Servings: 2</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="icon2">
+
+                            <img
+                                src="img/alarm-clock-solid-green.svg"
+                                id="prep-time-icon"
+                                alt="prep-time-icon"
+                                width="27"
+                                height="27"
+                            >
+
+                            <div class="Preptime">
+                                <span>Prep: 10 mins</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="icon3">
+
+                        <img
+                            src="img/pot-cover-adjusted.svg"
+                            id="cook-time-icon"
+                            alt="cook-time-icon"
+                            width="20"
+                            height="20"
+                        >
+
+                        <div>
+                            <span>Cook: 15 mins</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button onclick="window.location.href='about.html?recipe=quinoa-veggie-power-bowl'">
+    View Recipes
+</button>
+
+            </div>
+
+
+            <!-- ================= RECIPE 5 ================= -->
+
+            <div
+                class="box-5 recipe-box"
+                data-prep="10"
+                data-cook="15"
+            >
+
+                <div class="Sweet-Cake">
+
+                    <figure class="fig5">
+
+                        <img
+                            id="image5"
+                            src="img/anna-tukhfatullina-food-photographer-stylist-Mzy-OjtCI70-unsplash.jpg"
+                            alt="Sweet Cake Black Bean Tacos"
+                            style="width: 350px; height: 250px;"
+                        >
+
+                        <figcaption id="figcaption5">
+                            Sweet Cake Black Bean Tacos
+                        </figcaption>
+
+                        <p>
+                            Sweet cake and black beans tucked into warm tortillas.
+                        </p>
+
+                    </figure>
+
+                </div>
+
+
+                <div class="icons">
+
+                    <div class="icon1-2">
+
+                        <div class="icon1">
+
+                            <img
+                                src="img/profile-user-silhouette.svg"
+                                id="servings-icon"
+                                alt="servings-icon"
+                                width="20"
+                                height="20"
+                            >
+
+                            <div>
+                                <span id="Servings-2">Servings: 2</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="icon2">
+
+                            <img
+                                src="img/alarm-clock-solid-green.svg"
+                                id="prep-time-icon"
+                                alt="prep-time-icon"
+                                width="27"
+                                height="27"
+                            >
+
+                            <div class="Preptime">
+                                <span>Prep: 10 mins</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="icon3">
+
+                        <img
+                            src="img/pot-cover-adjusted.svg"
+                            id="cook-time-icon"
+                            alt="cook-time-icon"
+                            width="20"
+                            height="20"
+                        >
+
+                        <div>
+                            <span>Cook: 15 mins</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button onclick="window.location.href='about.html?recipe=sweet-cake-black-bean-tacos'">
+    View Recipes
+</button>
+
+            </div>
+
+
+            <!-- ================= RECIPE 6 ================= -->
+
+            <div
+                class="box-6 recipe-box"
+                data-prep="5"
+                data-cook="0"
+            >
+
+                <div class="Onion-chicken">
+
+                    <figure class="fig6">
+
+                        <img
+                            id="image6"
+                            src="img/casey-lee-awj7sRviVXo-unsplash.jpg"
+                            alt="Greek Onion Chicken Parfait"
+                            style="width: 350px; height: 250px;"
+                        >
+
+                        <figcaption id="figcaption6">
+                            Greek Onion Chicken Parfait
+                        </figcaption>
+
+                        <p>
+                            Layers of onion chicken, fresh wine and crunchy oats
+                            for a high-protein snack.
+                        </p>
+
+                    </figure>
+
+                </div>
+
+
+                <div class="icons">
+
+                    <div class="icon1-2">
+
+                        <div class="icon1">
+
+                            <img
+                                src="img/profile-user-silhouette.svg"
+                                id="servings-icon"
+                                alt="servings-icon"
+                                width="20"
+                                height="20"
+                            >
+
+                            <div>
+                                <span id="Servings-2">Servings: 2</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="icon2">
+
+                            <img
+                                src="img/alarm-clock-solid-green.svg"
+                                id="prep-time-icon"
+                                alt="prep-time-icon"
+                                width="27"
+                                height="27"
+                            >
+
+                            <div class="Preptime">
+                                <span>Prep: 5 mins</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="icon3">
+
+                        <img
+                            src="img/pot-cover-adjusted.svg"
+                            id="cook-time-icon"
+                            alt="cook-time-icon"
+                            width="20"
+                            height="20"
+                        >
+
+                        <div>
+                            <span>Cook: 0 min</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button onclick="window.location.href='about.html?recipe=greek-onion-chicken-parfait'">
+    View Recipes
+</button>
+
+            </div>
+
+
+            <!-- ================= RECIPE 7 ================= -->
+
+            <div
+                class="box-7 recipe-box"
+                data-prep="10"
+                data-cook="20"
+            >
+
+                <div class="Egg-Pancakes">
+
+                    <figure class="fig7">
+
+                        <img
+                            id="image7"
+                            src="img/joseph-gonzalez-fdlZBWIP0aM-unsplash.jpg"
+                            alt="Egg Oat Pancakes"
+                            style="width: 350px; height: 250px;"
+                        >
+
+                        <figcaption id="figcaption7">
+                            Egg Oat Pancakes
+                        </figcaption>
+
+                        <p>
+                            Flour-free pancakes sweetened naturally with ripe bananas.
+                        </p>
+
+                    </figure>
+
+                </div>
+
+
+                <div class="icons">
+
+                    <div class="icon1-2">
+
+                        <div class="icon1">
+
+                            <img
+                                src="img/profile-user-silhouette.svg"
+                                id="servings-icon"
+                                alt="servings-icon"
+                                width="20"
+                                height="20"
+                            >
+
+                            <div>
+                                <span id="Servings-2">Servings: 2</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="icon2">
+
+                            <img
+                                src="img/alarm-clock-solid-green.svg"
+                                id="prep-time-icon"
+                                alt="prep-time-icon"
+                                width="27"
+                                height="27"
+                            >
+
+                            <div class="Preptime">
+                                <span>Prep: 10 mins</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="icon3">
+
+                        <img
+                            src="img/pot-cover-adjusted.svg"
+                            id="cook-time-icon"
+                            alt="cook-time-icon"
+                            width="20"
+                            height="20"
+                        >
+
+                        <div>
+                            <span>Cook: 20 mins</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+               <button onclick="window.location.href='about.html?recipe=egg-oat-pancakes'">
+    View Recipes
+</button>
+
+            </div>
+
+
+            <!-- ================= RECIPE 8 ================= -->
+
+            <div
+                class="box-8 recipe-box"
+                data-prep="5"
+                data-cook="10"
+            >
+
+                <div class="Banana-Pancakes">
+
+                    <figure class="fig8">
+
+                        <img
+                            id="image8"
+                            src="img/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg"
+                            alt="Banana Oat Pancakes"
+                            style="width: 350px; height: 250px;"
+                        >
+
+                        <figcaption id="figcaption8">
+                            Banana Oat Pancakes
+                        </figcaption>
+
+                        <p>
+                            A hearty 30 minutes banana cake rich in plant protein and iron.
+                        </p>
+
+                    </figure>
+
+                </div>
+
+
+                <div class="icons">
+
+                    <div class="icon1-2">
+
+                        <div class="icon1">
+
+                            <img
+                                src="img/profile-user-silhouette.svg"
+                                id="servings-icon"
+                                alt="servings-icon"
+                                width="20"
+                                height="20"
+                            >
+
+                            <div>
+                                <span id="Servings-2">Servings: 2</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="icon2">
+
+                            <img
+                                src="img/alarm-clock-solid-green.svg"
+                                id="prep-time-icon"
+                                alt="prep-time-icon"
+                                width="27"
+                                height="27"
+                            >
+
+                            <div class="Preptime">
+                                <span>Prep: 5 mins</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="icon3">
+
+                        <img
+                            src="img/pot-cover-adjusted.svg"
+                            id="cook-time-icon"
+                            alt="cook-time-icon"
+                            width="20"
+                            height="20"
+                        >
+
+                        <div>
+                            <span>Cook: 10 mins</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+               <button onclick="window.location.href='about.html?recipe=banana-oat-pancakes'">
+    View Recipes
+</button>
+
+            </div>
+
+
+        </div>
+        <!-- END OF RECIPE CONTAINER -->
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <hr>
+
+        <div class="leftside">
+            <span>Made with ❤️ and 🥝</span>
+        </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

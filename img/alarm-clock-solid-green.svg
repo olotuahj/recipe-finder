@@ -1,0 +1,23 @@
+<!-- Save as alarm-clock-solid-green.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="alarmSolid">
+  <title id="alarmSolid">Solid dark green alarm clock with white hands</title>
+
+  <!-- dark green fill for body and bells -->
+  <g fill="#033018">
+    <!-- bells -->
+    <path d="M10 10c3-3 8-3 11 0Z"/>
+    <path d="M54 10c-3-3-8-3-11 0Z"/>
+    <!-- main body -->
+    <circle cx="32" cy="36" r="18"/>
+  </g>
+
+  <!-- white clock hands -->
+  <g fill="#FFFFFF">
+    <!-- vertical hand -->
+    <rect x="31" y="24" width="2" height="12" rx="1"/>
+    <!-- horizontal hand -->
+    <rect x="32" y="35" width="10" height="2" rx="1"/>
+    <!-- small center circle -->
+    <circle cx="32" cy="36" r="2"/>
+  </g>
+</svg>
